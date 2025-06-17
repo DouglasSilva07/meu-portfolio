@@ -1,0 +1,116 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+  background-color: #f8f8f8;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+}
+
+.informacoes {
+  background-color: #4a2c2a;
+  color: white;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto{
+  width: 20rem;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+}
+
+.nome{
+  padding: 0 10px;
+  text-align: center;
+  margin-bottom: 50%;
+  font-size: 3rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+ul li a i {
+  color: white;
+  font-size: 3.5rem;
+}
+
+ul li a i:hover{
+  color: #886865;
+  transition: all 0.3s ease;
+}
+
+.sobre {
+   background-color: #6b403d;
+  padding: 2.5rem;
+  margin-bottom: 4rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  white-space: pre-line;
+}
+
+
+.conteudo-geral {
+  padding: 4rem 4rem;
+
+}
+
+h2 {
+  font-size: 2rem;
+  color: #6b403d;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+.projetos{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.projeto {
+  font-size: 1.6rem;
+  background-color: #6b403d;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  white-space: pre-line;
+}
+
+.projeto a {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #f0d5c0;
+  font-weight: bold;
+  text-decoration: none;
+ 
+}
+
+.projeto a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
