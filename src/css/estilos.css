@@ -1,0 +1,148 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+  background-color: #f8f8f8;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+    background: linear-gradient(to right, 
+  #4169E1, 
+  #0000FF,  
+  #0000CD,  
+  #00008B,  
+  #000080,  
+  #191970   
+)
+}
+
+.informacoes {
+  /* box-shadow: 10px 10px 10px rgb(255 255 255); */
+  color: white;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .5rem;
+}
+
+.foto{
+  width: 20rem;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.nome{
+  padding: 0 10px;
+  text-align: center;
+  margin-bottom: 25%;
+  font-size: 3rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+ul li i {
+  color: white;
+  font-size: 3.5rem;
+}
+
+ul li i:hover{
+  color: #00BFFF;
+  transition: all 0.3s ease;
+}
+
+
+.sobre {
+   /* background-color: #4169E1; */
+  padding: 2.5rem;
+  margin-bottom: 4rem;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  box-shadow: 5px 5px 10px rgb(255 255 255);
+  white-space: pre-line;
+}
+
+
+.conteudo-geral {
+  padding: 1.5rem 4rem;
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+.projetos{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.projeto {
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(255 255 255);
+  white-space: pre-line;
+}
+
+.projeto p {
+  font-size: 1.4rem;
+  /* color: #E0E0E0; */
+  /* color: #DCDCDC; */
+}
+
+.projeto a {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #f0d5c0;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.projeto a:hover {
+  text-decoration: underline;
+  box-shadow: 5px 10px 8px rgb(0 0 0);
+}
+
+h4 {
+font-size: 2rem;
+margin: 1.5rem;
+}
+
+.linguagens {
+  display: flex;
+  align-items: center;
+  /* background-color: #4169E1; */
+  border-radius: .5rem;
+  box-shadow: 5px 5px 10px rgb(255 255 255);
+}
+
+.lista-linguagens {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}

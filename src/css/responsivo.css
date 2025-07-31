@@ -1,0 +1,36 @@
+@media (max-width:900px){
+    .projetos{
+        display: grid;
+        grid-template-columns: 1fr
+    }
+}
+
+@media (max-width: 600px) {
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.nome{
+    margin-bottom: 5px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.conteudo-geral{
+    padding: 1.5rem 1rem;
+}
+.projetos{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.projeto p{
+    font-size: 1.2rem;
+}
+}
