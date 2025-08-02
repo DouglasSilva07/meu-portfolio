@@ -139,10 +139,3 @@ margin: 1.5rem;
   flex-direction: row;
   gap: 5rem;
 }
-
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    gap: 0.5em;
-  }
-}
