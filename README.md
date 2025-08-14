@@ -1,10 +1,10 @@
-##Portfólio Profissional - Douglas Silva
+#Portfólio Profissional - Douglas Silva
 Bem-vindo(a) ao meu portfólio! Aqui você encontra uma seleção dos meus projetos, habilidades e experiências como desenvolvedor.
 
-##Sobre Mim
+#Sobre Mim
 Sou Desenvolvedor Front-end Junior com experiência em tecnologias como JavaScript e React. Tenho paixão por criar aplicações web eficientes, responsivas e de alta qualidade.
 
-##Tecnologias e Ferramentas 
+#Tecnologias e Ferramentas 
 
 Linguagens: JavaScript, HTML5, CSS3.
 
@@ -14,7 +14,7 @@ Ferramentas: Git, VSCode.
 
 Outros: APIs REST, GitHub, testes com Jest.
 
-##Projetos Destaque
+#Projetos Destaque
 
 💰 API de Criptomoeda
 Aplicação web interativa que apresenta cotações atualizadas das principais criptomoedas, com dados obtidos em tempo real por meio de integração com API pública. O projeto foi desenvolvido com HTML, CSS e JavaScript puro, destacando habilidades em consumo de APIs, manipulação dinâmica do DOM e criação de interfaces responsivas. Ideal para acompanhar tendências do mercado cripto de forma simples e intuitiva.
