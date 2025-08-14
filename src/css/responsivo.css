@@ -1,10 +1,3 @@
-@media (max-width:900px){
-    .projetos{
-        display: grid;
-        grid-template-columns: 1fr
-    }
-}
-
 @media (max-width: 600px) {
 body{
     display: grid;
@@ -25,12 +18,15 @@ ul{
 .conteudo-geral{
     padding: 1.5rem 1rem;
 }
-.projetos{
-    display: grid;
-    grid-template-columns: 1fr;
+
+.lista-linguagens{
+    display: flex;
+    gap: 1.5rem;
+}
 }
 
-.projeto p{
-    font-size: 1.2rem;
-}
+@media (min-width: 1440px){
+    body{
+        padding: 5rem 0;
+    }
 }
