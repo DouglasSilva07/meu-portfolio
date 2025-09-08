@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Douglas</title>
+  <link rel="stylesheet" href="src/css/reset.css" />
+  <link rel="stylesheet" href="src/css/estilos.css" />
+  <link rel="stylesheet" href="src/css/responsivo.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="informacoes">
+    <img class="foto" src="src/imagens/card-profile2.jpg" alt="foto de Douglas S. Duarte">
+
+    <h1 class="nome">Douglas Duarte</h1>
+
+    <ul>
+      <li>
+        <a href="mailto:douglasktt07@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/DouglasSilva07" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/douglas-duarte-a43054268/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main class="conteudo-geral">
+    <section id="sobre">
+      <h2 class="titulo">Sobre mim</h2>
+      <p class="sobre">Tenho 22 anos e sempre fui apaixonado por games e tecnologia. Recentemente descobri na
+        programação minha verdadeira vocação e desde então venho me dedicando intensamente a evoluir como desenvolvedor
+        front-end júnior.
+
+        Sou focado em criar interfaces modernas, acessíveis e funcionais, com atenção ao detalhe e à experiência do
+        usuário. Busco oportunidades para crescer profissionalmente, contribuir com projetos desafiadores e ampliar meus
+        conhecimentos, sempre com muita vontade de aprender novas linguagens e tecnologias.</p>
+    </section>
+
+    <section class="projetos">
+      <h2 class="titulo">Meus Projetos</h2>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="cafe">☕ Site do Café</button>
+        <button class="tab-btn" data-tab="atelier">🎂 Site do Atelier</button>
+        <button class="tab-btn" data-tab="cripto">💸 Cripto Moedas </button>
+      </div>
+
+      <div class="tab-content active" id="cafe">
+        <h3>☕ Site do Café</h3>
+        <p>Projeto fictício criado para representar a identidade de uma cafeteria artesanal com três blends exclusivos:
+          Cappuccino, Espresso e Mocha. Desenvolvido com HTML5 semântico e CSS3 responsivo, o layout se adapta de forma
+          fluida a desktop e mobile, incluindo menu hambúrguer para telas menores.
+          O site conta com seções animadas com transições suaves, cards de produto com efeitos de escala e sombra ao
+          hover, e um formulário de contato validado em JavaScript, que salva informações no localStorage e fornece
+          feedback visual. A tipografia Montserrat, paleta em tons terrosos e imagens de alta qualidade reforçam o
+          conceito acolhedor e artesanal da marca.</p>
+        <a href="https://douglassilva07.github.io/projeto-site-cafe/" target="_blank" class="btn">Visite o site</a>
+      </div>
+
+      <div class="tab-content" id="atelier">
+        <h3>🎂 Site do Atelier</h3>
+        <p>Projeto fictício desenvolvido como uma landing page para um atelier especializado em bolos, doces, salgados e
+          kits para festas. O foco foi criar uma experiência visual envolvente e intuitiva, utilizando HTML5 semântico e
+          CSS3 responsivo para garantir perfeita adaptação em diferentes dispositivos.
+          O site apresenta vitrine de produtos organizada por seções, menu interativo para navegação rápida, área de
+          contato e redes sociais, e um design que valoriza a identidade visual do atelier. A proposta é transmitir
+          sofisticação e clareza, destacando os produtos de forma atraente e funcional.</p>
+        <a href="https://douglassilva07.github.io/projeto-site-atelier/" target="_blank" class="btn">Visite o site</a>
+      </div>
+
+      <div class="tab-content" id="cripto">
+        <h3>💸 Cripto Moedas</h3>
+        <p>Projeto fictício desenvolvido com React, Vite e TypeScript para exibir cotações em tempo real das principais criptomoedas via API pública. A interface é responsiva e dinâmica, com tabela de ativos, marcação de favoritos e destaque visual para variações de preço. Componentes reutilizáveis, estilização com Tailwind CSS e layout adaptado para desktop e mobile reforçam o foco em performance e usabilidade.</p>
+        <a href="https://douglassilva07.github.io/projeto-cripto-moedas/" target="_blank" class="btn">Visite o site</a>
+      </div>
+    </section>
+
+
+    <div class="linguagens">
+      <h4>Linguagens:</h4>
+      <ul class="lista-linguagens">
+        <li>
+          <i class="fa-brands fa-html5"></i>
+        </li>
+
+        <li>
+          <i class="fa-brands fa-css3-alt"></i>
+        </li>
+
+        <li>
+          <i class="fa-brands fa-js"></i>
+        </li>
+
+        <li>
+          <i class="fa-brands fa-react"></i>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="src/js/script.js"></script>
+</body>
+
+</html>
