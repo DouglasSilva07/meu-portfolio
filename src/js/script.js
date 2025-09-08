@@ -1,12 +1,12 @@
-const tabBtns = document.querySelectorAll(".tab-btn");
-const tabContents = document.querySelectorAll(".tab-content");
+document.getElementById('baixar-cv').addEventListener('click', function () {
 
-tabBtns.forEach(btn => {
-  btn.addEventListener("click", () => {
-    tabBtns.forEach(b => b.classList.remove("active"));
-    tabContents.forEach(c => c.classList.remove("active"));
-
-    btn.classList.add("active");
-    document.getElementById(btn.dataset.tab).classList.add("active");
-  });
+    const link = document.createElement('a');
+    link.href = './src/Curriculo-Douglas.pdf';
+    link.download = 'Douglas_Duarte_CV.pdf';
+    link.click();
 });
+
+function toggleMenu() {
+  const menu = document.querySelector('nav ul');
+  menu.classList.toggle('active');
+}

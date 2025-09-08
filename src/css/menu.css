@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline;
+}
+
+nav ul li a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
