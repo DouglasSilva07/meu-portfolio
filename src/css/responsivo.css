@@ -13,50 +13,121 @@
         font-size: 1.2rem;
     }
 
-    .menu-hamburguer {
-        display: none;
-        flex-direction: column;
-        cursor: pointer;
-        width: 30px;
-        height: 25px;
-        justify-content: space-between;
-    }
-
     nav ul {
         display: none;
         flex-direction: column;
-        background: #0d1117;
+        background: var(--btn-card-color);
+        color: var(--text-color);
         position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 180px;
-        border-radius: 8px;
-        padding: 10px 0;
-        z-index: 10;
+        top: 6rem;
+        right: 1.9rem;
+        width: 10rem;
+        border-radius: 0.8rem;
+        padding: 1rem 0;
+        z-index: 1;
+    }
+
+    nav ul li a {
+        margin-left: 0;
     }
 
     nav ul.active {
         display: flex;
         align-items: center;
+        padding: 1rem;
+    }
+
+    nav ul.active a {
+        text-align: center;
     }
 
     .menu-hamburguer {
         display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        width: 30px;
+        height: 25px;
+        justify-content: space-between;
+
     }
 
     .menu-hamburguer span {
         display: block;
         height: 4px;
         width: 100%;
-        background: #fff;
+        background: var(--text-color);
         border-radius: 2px;
         transition: 0.4s;
         margin: 4px 0;
     }
 
-    .skills i {
-    display: flex;
-    padding: 0.2rem 0.5rem;
-    font-size: 14px; 
+    .menu-hamburguer.open span {
+        margin: 0;
+        z-index: 2;
+    }
+
+    .menu-hamburguer.open span:nth-child(2) {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+    .menu-hamburguer.open span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+
+    .menu-hamburguer.open span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .tema {
+        padding: 0.3rem 0.4rem;
+    }
+
+    .tema img {
+        width: 20px;
+        height: auto;
+    }
+
+    .hero img {
+        display: none;
+    }
+
+    .sobre-mim img {
+        display: none;
+    }
+
+    .skills img {
+        display: flex;
+        padding: 0.2rem 0.5rem;
+    }
 }
+
+@media (max-width: 500px) {
+    .sobre {
+        font-size: 14px;
+    }
+
+    .card {
+        max-width: 350px;
+        padding: 1rem;
+    }
+
+    .card h4 {
+        margin-top: 0.8rem;
+        font-size: 16px;
+    }
+
+    .card p {
+        margin: 0.8rem 0.5rem;
+        font-size: 14px;
+    }
+
+    .skills li img {
+        width: 50px;
+        height: auto;
+        padding: 0.1rem 0.3rem;
+    }
+
 }

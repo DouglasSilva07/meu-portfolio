@@ -1,0 +1,22 @@
+/*TEMA DARK*/
+:root {
+    --bg-color: radial-gradient(circle at top left, #1e2630 0%, #0a0d14 100%);
+    --card-color: #12161B;
+    --text-color: #e6edf3;
+    --accent-color: #262e3b;
+    --muted-color: #8b949e;
+    --btn-text-color: #0a0d14;
+    --btn-card-color: #161b22;
+}
+
+
+/*TEMA LIGHT*/
+.light-theme {
+    --bg-color: radial-gradient(circle at top left, #F0F3F7 0%, #D3D8DF 100%);
+    --card-color: #D4D4D4;
+    --text-color: #24292e;
+    --accent-color: #686868;
+    --muted-color: #8B949E;
+    --btn-text-color: #e6edf3;
+    --btn-card-color: #A9A9A9;
+}

@@ -1,26 +1,62 @@
 /* HERO */
 
+@-webkit-keyframes hero {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        letter-spacing: normal;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes hero {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        letter-spacing: normal;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .hero {
-    text-align: center;
-    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    gap: 1.5rem;
+    padding: 4rem 3rem;
+    -webkit-animation:hero 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: hero 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .hero img {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 50%;
     border: 3px solid var(--accent-color);
 }
 
-.hero h2 {
-    margin-top: 1rem;
-    font-size: 2rem;
-}
-
-.hero p {
-    margin-top: 0.5rem;
-    color: var(--muted-color);
-    font-size: 17px;
+.hero-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
 }
 
 
@@ -34,21 +70,24 @@ h3 {
     padding-left: 0.5rem;
 }
 
+.sobre-mim {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .sobre {
-    background: var(--card-color);
-    padding: 2rem;
+    padding: 1rem 4rem;
     border-radius: 12px;
     font-size: 17px;
 }
 
-.sobre ul {
-    margin-top: 1rem;
-    list-style: none;
+.imagem-manga {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
 }
 
-.sobre li::before {
-    content: "✔️ ";
-}
 
 /* PROJETOS */
 
@@ -84,13 +123,13 @@ h3 {
 
 .card p {
     margin: 1rem 0.5rem;
-    color: var(--muted-color);
+    color: var(--text-color);
     font-size: 17px;
 }
 
 .btn {
-    background: var(--accent-color);
-    color: white;
+    background: var(--btn-card-color);
+    color: var(--text-color);
     border: none;
     padding: 0.7rem 1.4rem;
     border-radius: 8px;
@@ -101,7 +140,7 @@ h3 {
 }
 
 .btn:hover {
-    background: #2563eb;
+    background: var(--accent-color);
 }
 
 /* HABILIDADES */
@@ -113,11 +152,14 @@ h3 {
     list-style: none;
 }
 
-.skills i {
+.skills li {
     display: flex;
     padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-size: 20px;
+}
+
+.skills li img {
+    width: 5rem;
+    height: auto;
 }
 
 .icones {
@@ -131,10 +173,10 @@ footer {
     padding: 2rem;
     margin-top: 2rem;
     background: var(--card-color);
-    color: var(--muted-color);
+    color: var(--text-color);
 }
 
-.contatos{
+.contatos {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -151,4 +193,9 @@ footer {
 
 .contatos a:hover {
     color: var(--accent-color);
+}
+
+/*BOTÃO DE TROCAR TEMA*/
+.tema {
+    padding: 0.5rem 0.6rem;
 }

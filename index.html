@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfólio - Douglas Duarte</title>
     <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/menu.css">
     <link rel="stylesheet" href="src/css/estilos.css">
     <link rel="stylesheet" href="src/css/responsivo.css">
@@ -20,12 +21,20 @@
 
 <body>
     <header>
-        <h1>Desenvolvedor Front-End Júnior</h1>
+        <div class="logo">
+            <h1>Dev /></h1>
+
+            <button id="trocar-tema" onclick="themeToggle()" class="btn tema">
+                <img src="src/imagens/icon-sun.svg" alt="Trocar Tema">
+            </button>
+        </div>
+
+
         <nav>
             <label for="menu-hamburguer">
                 <div class="menu-hamburguer" onclick="toggleMenu()">
                     <span></span>
-                    <span></span>
+                    <span ></span>
                     <span></span>
                 </div>
             </label>
@@ -36,28 +45,45 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+
     </header>
 
     <section class="hero">
+
         <img src="src/imagens/card-profile2.jpg" alt="Foto de perfil" />
-        <h2>Douglas Silva Duarte</h2>
-        <p>Apaixonado por tecnologia, focado em interfaces modernas e acessíveis.</p>
-        <button class="btn" id="baixar-cv">Baixar CV</button>
+
+        <div class="hero-texto">
+            <h2>Prazer, sou o Douglas Silva</h2>
+            <p>Apaixonado por tecnologia, com muito foco em interfaces modernas e acessíveis.</p>
+            <ul class="contatos">
+                <li>
+                    <a href="mailto:douglasktt07@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/DouglasSilva07" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/douglas-duarte-a43054268/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <button class="btn" id="baixar-cv">Currículo</button>
+        </div>
     </section>
 
-    <section id="sobre">
-        <h3>Sobre mim</h3>
+    <section id="sobre" class="sobre-mim">
+        <img src="src/imagens/foto-sobre-mim.jpg" alt="Imagem de Douglas no estilo de mangá" class="imagem-manga">
+
         <div class="sobre">
-            <p>Tenho 22 anos, apaixonado por games e tecnologia. Descobri na
-                programação minha verdadeira vocação e desde então venho me dedicando intensamente a evoluir como
-                desenvolvedor
-                front-end júnior.</p>
-            <ul>
-                <li>Crio interfaces modernas, acessíveis e funcionais</li>
-                <li>Valorizo atenção ao detalhe e experiência do usuário</li>
-                <li>Busco crescer profissionalmente e aprender novas tecnologias</li>
-            </ul>
+            <h3>Sobre mim</h3>
+            <p class="text"></p>
         </div>
+
     </section>
 
     <section id="projetos">
@@ -67,6 +93,7 @@
                 <img src="src/imagens/tela-site-cafe.gif" alt="Site do Café" />
                 <h4>☕ Site do Café</h4>
                 <p>Landing page fictícia de cafeteria artesanal, com animações e formulário validado em JS.</p>
+
                 <a href="https://douglassilva07.github.io/projeto-site-cafe/" target="_blank" class="btn">Ver
                     Projeto</a>
             </div>
@@ -74,13 +101,15 @@
                 <img src="src/imagens/tela-site-atelierr.gif" alt="Site do Atelier" />
                 <h4>🎂 Site do Atelier</h4>
                 <p>Portfólio de confeitaria com layout responsivo, foco em imagens e experiência do usuário.</p>
+
                 <a href="https://douglassilva07.github.io/projeto-site-atelier/" target="_blank" class="btn">Ver
                     Projeto</a>
             </div>
             <div class="card">
                 <img src="src/imagens/Captura de tela 2025-09-08 150701.png" alt="Cripto Moedas" />
                 <h4>💰 Cripto Moedas</h4>
-                <p>Tabela dinâmica de moedas com consumo de API, lista de favoritos e gráficos de evolução.</p>
+                <p>Tabela dinâmica de moedas com consumo de API, lista de favoritos e variações de preço.</p>
+
                 <a href="https://douglassilva07.github.io/projeto-cripto-moedas/" target="_blank" class="btn">Ver
                     Projeto</a>
             </div>
@@ -91,18 +120,37 @@
         <h3>Skills</h3>
         <ul class="skills">
             <li>
-                <i class="icones fa-brands fa-html5">HTML</i>
+                <img src="src/imagens/hard-skills/skill-icons--html.svg" alt="Ícone do HTML5">
             </li>
             <li>
-                <i class="icones fa-brands fa-css3-alt">CSS</i>
-            </li>
-
-            <li>
-                <i class="icones fa-brands fa-js">JavaScript</i>
+                <img src="src/imagens/hard-skills/skill-icons--css.svg" alt="Ícone do CSS3">
             </li>
 
             <li>
-                <i class="icones fa-brands fa-react">React</i>
+                <img src="src/imagens/hard-skills/skill-icons--javascript.svg" alt="Ícone do JavaScript">
+            </li>
+
+            <li>
+                <img src="src/imagens/hard-skills/skill-icons--react-dark.svg" alt="Ícone do React"
+                    data-skill-name="react">
+            </li>
+
+            <li>
+                <img src="src/imagens/hard-skills/skill-icons--typescript.svg" alt="Ícone do TypeScript">
+            </li>
+
+            <li>
+                <img src="src/imagens/hard-skills/skill-icons--tailwindcss-dark.svg" alt="Ícone do Tailwindcss"
+                    data-skill-name="tailwindcss">
+            </li>
+
+            <li>
+                <img src="src/imagens/hard-skills/skill-icons--git.svg" alt="Ícone do Git">
+            </li>
+
+            <li>
+                <img src="src/imagens/hard-skills/skill-icons--github-dark.svg" alt="Ícone do GitHub"
+                    data-skill-name="github">
             </li>
         </ul>
     </section>
@@ -128,8 +176,8 @@
             </li>
         </ul>
     </footer>
-</body>
 
-<script src="src/js/script.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
 
 </html>
