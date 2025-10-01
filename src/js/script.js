@@ -58,14 +58,14 @@ function applyTheme(theme) {
     localStorage.setItem(themeKey, 'light');
 
     if (themeIcon) {
-      themeIcon.src = '../src/imagens/icon-moon.svg';
+      themeIcon.src = '../src/imagens/moon.svg';
     }
   } else {
     body.classList.remove(LIGHT_THEME_CLASS);
     localStorage.setItem(themeKey, 'dark');
 
     if (themeIcon) {
-      themeIcon.src = '../src/imagens/icon-sun.svg';
+      themeIcon.src = '../src/imagens/sun-icon.svg';
     }
   }
 
