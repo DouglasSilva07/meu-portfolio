@@ -13,7 +13,7 @@ document.getElementById('baixar-cv').addEventListener('click', function () {
 function toggleMenu() {
   const menu = document.querySelector('nav ul');
   const menuHamburguerIcon = document.querySelector('.menu-hamburguer');
-  
+
   menu.classList.toggle('active');
 
 
@@ -58,14 +58,14 @@ function applyTheme(theme) {
     localStorage.setItem(themeKey, 'light');
 
     if (themeIcon) {
-      themeIcon.src = '../src/imagens/moon.svg';
+      themeIcon.src = '/src/imagens/moon.svg';
     }
   } else {
     body.classList.remove(LIGHT_THEME_CLASS);
     localStorage.setItem(themeKey, 'dark');
 
     if (themeIcon) {
-      themeIcon.src = '../src/imagens/sun-icon.svg';
+      themeIcon.src = '/src/imagens/sun-icon.svg';
     }
   }
 
@@ -74,7 +74,7 @@ function applyTheme(theme) {
 
 
 function toggleTheme() {
- 
+
   const isCurrentlyLight = body.classList.contains(LIGHT_THEME_CLASS);
 
   const newTheme = isCurrentlyLight ? 'dark' : 'light';
@@ -86,22 +86,17 @@ function toggleTheme() {
 
 document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem(themeKey);
-
-  if (savedTheme) {
-  
-    applyTheme(savedTheme);
-  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-    applyTheme('light');
-  } else {
-    applyTheme('dark');
-  }
+  const systemPref = window.matchMedia('(prefers-color-scheme: light)').matches
+    ? 'light'
+    : 'dark';
+  const initialTheme = savedTheme || systemPref;
 
   applyTheme(initialTheme);
-});
 
-if (themeToggle) {
-  themeToggle.addEventListener('click', toggleTheme);
-}
+  if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+  }
+});
 
 
 //TROCA SVG DAS HARDS SKILLS
@@ -111,8 +106,8 @@ function switchSkillImages(theme) {
 
   const skillImagesToSwitch = document.querySelectorAll('img[data-skill-name]');
 
- 
-  const suffix = theme; 
+
+  const suffix = theme;
 
   const folderPath = 'src/imagens/hard-skills/';
   const filePrefix = 'skill-icons--';
